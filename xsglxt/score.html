@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>成绩管理页面</title>
+<style type="text/css">
+nav{
+	background-color: #CCE8F4;
+	height: 650px;
+	width: 1260px;}
+#d1{
+	background-color: #6CF;
+	height: 100px;
+	font-family: "华文隶书";
+	color: #969;
+	font-size: 15px;
+	text-align:center;
+}
+#headl{
+	background-color:#6CF;
+	height:45px;
+	font-family: "华文隶书";
+	color: #969;
+	font-size: 32px;
+	text-align: center;
+	border: 3px inset #CCF;
+	border-radius: 15px;
+	padding-top:0.5cm;
+	padding-bottom:0.5cm;
+	font-weight:bolder;
+	letter-spacing:20px;
+}
+.span1
+{
+background-color: #FFF;
+	display: inline-block;
+	width: 400px;
+	height: 380px;
+	float:right;
+	border: 3px inset #CCF;
+	border-radius: 15px;}
+.span2
+{
+background-color: #FFF;
+	display: inline-block;
+	width: 320px;
+	height: 380px;
+	border: 3px inset #CCF;
+	border-radius: 15px;
+	text-align:center;
+	float:right;
+	}
+.span3{
+	background-color: #FFF;
+	display: inline-block;
+	width: 240px;
+	height: 310px;
+	border: 3px inset #CCF;
+	border-radius: 15px;
+	text-align:center;
+	color:#333;
+	float:left;
+	padding-top:2cm;
+}
+.d2{
+	width:400px;
+	height:380px;
+	overflow:scroll;}
+#d3{
+	width:158px;
+	height:25px;}
+.d4{
+	padding-left:100cm;}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+<nav>
+<div id="headl">
+学生成绩管理</div>
+<br />
+<span class="span3">
+<table width="140" border="1" align="center">
+  <tr>
+    <td><a href="student.html"><font color="#000000"><b>学生管理</b></font></a></td>
+  </tr>
+</table>
+<br /><br /><table width="140" border="1" align="center">
+  <tr>
+    <td><a href="score.php"><font color="#000000"><b>成绩管理</b></font></a></td>
+  </tr>
+</table></span>
+<span class="span1">
+<iframe name="shuju" align="right" scrolling="auto" width="400px" height="380px"><div class="d4"></div></iframe><br /></span>
+<span class="span2">
+<br /><br /><br /><br /><br />
+<form action="score.php" target="shuju" method="post">
+&nbsp;姓名：<input type="text" name="XM" />
+<br /><br />
+课程：
+<select name="KCM" id="d3">
+  <option>c++</option>
+<option>网页设计</option>
+<option>高数</option>
+<option>php</option>
+<option>mysql</option></select>
+<br /><br />
+&nbsp;成绩：<input type="text" name="CJ" />
+<br /><br />
+<button class="button" type="submit" name="录入">录入</button>&nbsp;&nbsp;
+<button class="button" type="submit" name="查询">查询</button>&nbsp;&nbsp;
+<button class="button" type="submit" name="删除">删除</button>&nbsp;&nbsp;
+<button class="button" type="submit" name="更新">更新</button>&nbsp;&nbsp;
+</form>
+</span>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<div id="d1"><br />&nbsp;&nbsp;&nbsp;&nbsp;系别：软件工程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;班级：19级软件工程2班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名：杨多思
+<br />&nbsp;&nbsp;&nbsp;&nbsp;QQ：1068637453&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：1068637453@qq.com</div>
+</nav>
+</body>
+</html>
